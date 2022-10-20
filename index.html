@@ -8,7 +8,7 @@
 <body>
   <h1>In The Beginning...</h1>
   <h2>Fill out the form below then click submit to create your character</h2>
-  <form>
+  <form id="character">
     <label for="name">Name</label>
     <input id="name" type="text"><br>
     <select id="hat">
@@ -18,7 +18,7 @@
       <option>Baseball Cap</option>
     </select><br>
     <label>
-      <input type="radio" name="charType" value="human">
+      <input type="radio" name="charType" value="human" checked>
       Human
     </label><br>
     <label>
@@ -34,7 +34,13 @@
     <button type="submit">Build Your Character</button>
   </form>
   
-
+  <div class='display'>
+    <h2 id="nameChoice"></h2>
+    <img src="" alt="An image of your character type.">
+    <p id="hatChoice"></p>
+    <p id="typeChoice"></p>
+    <p id="colorChoice"></p>
+  </div>
 
 </body>
 </html>
